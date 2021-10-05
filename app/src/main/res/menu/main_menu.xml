@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_home"
+        android:title="HOME"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_home"
+         />
+    <item android:id="@+id/menu_phieu"
+        android:title="NOTE"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_phieu"
+        />
+    <item android:id="@+id/menu_hocvien"
+        android:title="STUDENT"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_hv"
+        />
+    <item android:id="@+id/menu_giangvien"
+        android:title="TEACHER"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_gv"
+        />
+    <item android:id="@+id/menu_thongke"
+        android:title="REVENUE"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_thongke"
+        />
+</menu>

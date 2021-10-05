@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".lop.DanhSachLop"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDSLop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bg"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_TenLop_DSLop"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="Tên lớp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/ivBack_DSLop"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_back"/>
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDanhSachLop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray" />
+</LinearLayout>

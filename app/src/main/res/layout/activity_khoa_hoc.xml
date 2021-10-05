@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".khoahoc.KhoaHocActivity"
+    android:orientation="vertical"
+    android:background="@color/gray">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarKhoaHoc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bg">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_TenLoaiKH_KH"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="Tên loại khóa học"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/ivBack_KH"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_back"/>
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/TimKiemKH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@null"
+        android:background="@drawable/search"
+        android:layout_margin="10dp"
+        app:submitBackground="@null" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerViewKH"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/gray" />
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/addKH"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:layout_margin="16dp"
+          android:src="@drawable/ic_add"
+          app:layout_anchor="@id/recyclerViewKH"
+          app:layout_anchorGravity="bottom|right|end"
+          app:layout_behavior=".FloatingButtonBehavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+  </LinearLayout>
